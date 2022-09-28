@@ -1,4 +1,4 @@
-const parseEnv = require('parse-dotenv');
+const { parseEnv } = require('./parse');
 const { writeEnvVarChanges } = require('./file');
 const { fetchParameterStoreValues } = require('./ssm');
 

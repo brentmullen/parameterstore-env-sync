@@ -1,6 +1,6 @@
 {
   "name": "parameterstore-env-sync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sync .env file with example env and values from AWS Parameter Store",
   "main": "src/cli.js",
   "bin": {
@@ -41,7 +41,6 @@
   "dependencies": {
     "@aws-sdk/client-ssm": "^3.180.0",
     "cli-color": "^2.0.3",
-    "commander": "^9.4.0",
-    "parse-dotenv": "^2.1.0"
+    "commander": "^9.4.0"
   }
 }
