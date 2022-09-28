@@ -1,0 +1,47 @@
+{
+  "name": "parameterstore-env-sync",
+  "version": "1.0.0",
+  "description": "Sync .env file with example env and values from AWS Parameter Store",
+  "main": "src/cli.js",
+  "bin": {
+    "parameterstore-env-sync": "src/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint ./src/**/*.js",
+    "lint:fix": "eslint ./src/**/*.js --fix",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentmullen/parameterstore-env-sync.git"
+  },
+  "keywords": [
+    "env",
+    "env sync",
+    "dotenv",
+    "dotenv sync",
+    "parameterstore",
+    "parameterstore sync",
+    "parameter store",
+    "parameter store sync"
+  ],
+  "author": "Brent Mullen <brent.mullen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brentmullen/parameterstore-env-sync/issues"
+  },
+  "homepage": "https://github.com/brentmullen/parameterstore-env-sync#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.180.0",
+    "cli-color": "^2.0.3",
+    "commander": "^9.4.0",
+    "parse-dotenv": "^2.1.0"
+  }
+}
